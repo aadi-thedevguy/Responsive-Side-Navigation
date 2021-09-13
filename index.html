@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <!-- <i class="fab fa-react"></i> -->
+                <img src="cpu.svg">
+                <div class="logo_name">An_ITGuy</div>
+            </div>
+            <img src="menu.svg" id="btn">
+        </div>
+        
+    
+        <ul class="nav_list">
+            <li>
+                <!-- <i class="fas fa-search"></i> -->
+                <img src="search.svg" class="bx-search">
+                <input type="text" placeholder="search....">
+                <span class="tooltip">Search</span>
+            <li>
+                <a href="#">
+                    <!-- <i class="fas fa-user"></i>
+                     -->
+                     <img src="user.svg" alt="">
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <img src="shopping-cart.svg" alt="">
+                    <span class="links_name">Cart</span>
+                </a>
+                <span class="tooltip">Cart</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="folder.svg" alt="">
+                    <span class="links_name">Files</span>
+                </a>
+                <span class="tooltip">Files</span>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <img src="pie-chart.svg" alt="">
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="settings.svg" alt="">
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="project-2.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Aditya Khare</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <img src="log-out.svg" id="logout">
+                
+            </div>
+        </div>
+    </div>    
+
+    
+    <script src="https://kit.fontawesome.com/e718856e13.js" crossorigin="anonymous"></script>
+    <script>
+        const btn = document.querySelector('#btn');
+        const sideBar = document.querySelector('.sidebar');
+        const logoutBtn = document.querySelector('#logout');
+
+        btn.onclick = () => {
+            sideBar.classList.toggle('active');
+        }
+
+        logoutBtn.onclick = () => {
+            sideBar.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
